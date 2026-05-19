@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-shop me-2"></i>MiTienda</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="productos.html"><i class="bi bi-box me-1"></i>Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="crear-producto.html"><i class="bi bi-plus-circle me-1"></i>Crear</a></li>
+          <li class="nav-item"><a class="nav-link" href="stock.html"><i class="bi bi-clipboard-data me-1"></i>Stock</a></li>
+          <li class="nav-item"><a class="nav-link" href="estadisticas.html"><i class="bi bi-graph-up me-1"></i>Estadísticas</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a href="carrito.html" class="btn btn-outline-light position-relative">
+            <i class="bi bi-cart3"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+          </a>
+          <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">
+              <i class="bi bi-person-circle me-1"></i>Admin
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Perfil</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Configuración</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-danger" href="index.html"><i class="bi bi-box-arrow-right me-2"></i>Cerrar sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h4 class="fw-bold mb-1">Listado de Productos</h4>
+        <p class="text-muted small mb-0">Todos los productos disponibles</p>
+      </div>
+      <a href="crear-producto.html" class="btn btn-primary rounded-3"><i class="bi bi-plus-lg me-1"></i>Nuevo Producto</a>
+    </div>
+
+    <div class="row mb-4 g-2">
+      <div class="col-sm-6 col-md-4">
+        <div class="input-group">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Buscar producto...">
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <select class="form-select">
+          <option value="">Todas las categorías</option>
+          <option>Electrónica</option>
+          <option>Ropa</option>
+          <option>Hogar</option>
+          <option>Deportes</option>
+        </select>
+      </div>
+      <div class="col-sm-6 col-md-2">
+        <select class="form-select">
+          <option value="">Todos</option>
+          <option>Activos</option>
+          <option>Inactivos</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            <i class="bi bi-laptop text-secondary" style="font-size: 4rem;"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge bg-primary">Electrónica</span>
+              <span class="badge bg-success">Activo</span>
+            </div>
+            <h6 class="fw-bold mt-2">Laptop Pro 15"</h6>
+            <p class="small text-muted mb-2">Laptop de última generación con 16GB RAM</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary fs-5">$899.990</span>
+              <span class="small text-muted"><i class="bi bi-box me-1"></i>15 uds.</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 px-3 pb-3 pt-0">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill"><i class="bi bi-pencil me-1"></i>Editar</button>
+              <button class="btn btn-outline-danger btn-sm flex-fill"><i class="bi bi-trash me-1"></i>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            <i class="bi bi-phone text-secondary" style="font-size: 4rem;"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge bg-primary">Electrónica</span>
+              <span class="badge bg-success">Activo</span>
+            </div>
+            <h6 class="fw-bold mt-2">Smartphone X200</h6>
+            <p class="small text-muted mb-2">Pantalla AMOLED 6.7" 128GB</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary fs-5">$549.990</span>
+              <span class="small text-muted"><i class="bi bi-box me-1"></i>42 uds.</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 px-3 pb-3 pt-0">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill"><i class="bi bi-pencil me-1"></i>Editar</button>
+              <button class="btn btn-outline-danger btn-sm flex-fill"><i class="bi bi-trash me-1"></i>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            <i class="bi bi-headphones text-secondary" style="font-size: 4rem;"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge bg-warning text-dark">Electrónica</span>
+              <span class="badge bg-success">Activo</span>
+            </div>
+            <h6 class="fw-bold mt-2">Auriculares Bluetooth</h6>
+            <p class="small text-muted mb-2">Cancelación de ruido activa</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary fs-5">$89.990</span>
+              <span class="small text-muted"><i class="bi bi-box me-1"></i>78 uds.</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 px-3 pb-3 pt-0">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill"><i class="bi bi-pencil me-1"></i>Editar</button>
+              <button class="btn btn-outline-danger btn-sm flex-fill"><i class="bi bi-trash me-1"></i>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            <i class="bi bi-t-shirt text-secondary" style="font-size: 4rem;"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge bg-info text-dark">Ropa</span>
+              <span class="badge bg-secondary">Inactivo</span>
+            </div>
+            <h6 class="fw-bold mt-2">Polera Algodón Premium</h6>
+            <p class="small text-muted mb-2">Algodón orgánico, varios colores</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary fs-5">$24.990</span>
+              <span class="small text-muted"><i class="bi bi-box me-1"></i>0 uds.</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 px-3 pb-3 pt-0">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill"><i class="bi bi-pencil me-1"></i>Editar</button>
+              <button class="btn btn-outline-danger btn-sm flex-fill"><i class="bi bi-trash me-1"></i>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            <i class="bi bi-clock text-secondary" style="font-size: 4rem;"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge bg-danger">Hogar</span>
+              <span class="badge bg-success">Activo</span>
+            </div>
+            <h6 class="fw-bold mt-2">Reloj de Pared Moderno</h6>
+            <p class="small text-muted mb-2">Diseño minimalista, silencioso</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary fs-5">$34.990</span>
+              <span class="small text-muted"><i class="bi bi-box me-1"></i>23 uds.</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 px-3 pb-3 pt-0">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill"><i class="bi bi-pencil me-1"></i>Editar</button>
+              <button class="btn btn-outline-danger btn-sm flex-fill"><i class="bi bi-trash me-1"></i>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 border-0 shadow-sm rounded-3">
+          <div class="bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center" style="height: 180px;">
+            <i class="bi bi-basket text-secondary" style="font-size: 4rem;"></i>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="badge bg-success">Deportes</span>
+              <span class="badge bg-success">Activo</span>
+            </div>
+            <h6 class="fw-bold mt-2">Balón de Fútbol Profesional</h6>
+            <p class="small text-muted mb-2">Tamaño oficial, cuero sintético</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-primary fs-5">$45.990</span>
+              <span class="small text-muted"><i class="bi bi-box me-1"></i>12 uds.</span>
+            </div>
+          </div>
+          <div class="card-footer bg-white border-top-0 px-3 pb-3 pt-0">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill"><i class="bi bi-pencil me-1"></i>Editar</button>
+              <button class="btn btn-outline-danger btn-sm flex-fill"><i class="bi bi-trash me-1"></i>Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mt-4">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
