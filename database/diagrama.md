@@ -4,6 +4,7 @@
 erDiagram
     usuarios {
         int id PK
+        varchar username
         varchar nombre
         varchar apellido
         varchar email UK
